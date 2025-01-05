@@ -42,9 +42,9 @@ This project provides a Python script that uses **Selenium** to load a web page 
 
 2. Run the script:
 
-```
+    ```
     python main.py
-```
+    ```
 
 3. The script will start monitoring the page. If a change is detected, the updated HTML page will be saved with a timestamped filename, e.g., rendered_page_20250105_120505.html.
 
@@ -59,11 +59,11 @@ To resolve this:
 increase the Wait Timeout: In the script, locate the WebDriverWait section where the page waits for the dynamic element. Increase the timeout value to allow the page more time to load.
 For example, change the timeout from 20 seconds to 60 seconds:
 
-```
+    ```
     WebDriverWait(driver, 60).until(
     EC.presence_of_element_located((By.CSS_SELECTOR, ".dynamic-class"))
     )
-```
+    ```
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
