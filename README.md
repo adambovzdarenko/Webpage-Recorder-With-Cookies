@@ -60,7 +60,7 @@ increase the Wait Timeout: In the script, locate the WebDriverWait section where
 For example, change the timeout from 20 seconds to 60 seconds:
 
     WebDriverWait(driver, 60).until(
-    EC.presence_of_element_located((By.CSS_SELECTOR, ".dynamic-class"))
+       EC.presence_of_element_located((By.CSS_SELECTOR, ".dynamic-class"))
     )
     
 ## License
