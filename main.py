@@ -52,7 +52,7 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
 # Navigate to the target page
-url = "https://biz.yelp.pl/leads_center/6Bl3HCKGAIBWgF1KK1rH0g/leads"
+url = "example.com"
 driver.get(url)
 
 # Add cookies to the browser
